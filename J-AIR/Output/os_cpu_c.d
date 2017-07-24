@@ -36,6 +36,7 @@
 ..\output\os_cpu_c.o: ..\Libraries\inc\stm32f4xx_dma.h
 ..\output\os_cpu_c.o: ..\Libraries\inc\stm32f4xx_gpio.h
 ..\output\os_cpu_c.o: ..\Libraries\inc\stm32f4xx_rcc.h
+..\output\os_cpu_c.o: ..\Libraries\inc\stm32f4xx_tim.h
 ..\output\os_cpu_c.o: ..\Libraries\inc\stm32f4xx_usart.h
 ..\output\os_cpu_c.o: ..\Libraries\inc\stm32f4xx_wwdg.h
 ..\output\os_cpu_c.o: ..\Libraries\inc\misc.h

@@ -12,6 +12,7 @@
 ..\output\system_stm32f4xx.o: ..\Libraries\inc\stm32f4xx_dma.h
 ..\output\system_stm32f4xx.o: ..\Libraries\inc\stm32f4xx_gpio.h
 ..\output\system_stm32f4xx.o: ..\Libraries\inc\stm32f4xx_rcc.h
+..\output\system_stm32f4xx.o: ..\Libraries\inc\stm32f4xx_tim.h
 ..\output\system_stm32f4xx.o: ..\Libraries\inc\stm32f4xx_usart.h
 ..\output\system_stm32f4xx.o: ..\Libraries\inc\stm32f4xx_wwdg.h
 ..\output\system_stm32f4xx.o: ..\Libraries\inc\misc.h

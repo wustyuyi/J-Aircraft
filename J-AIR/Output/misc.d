@@ -13,6 +13,7 @@
 ..\output\misc.o: ..\Libraries\inc\stm32f4xx_dma.h
 ..\output\misc.o: ..\Libraries\inc\stm32f4xx_gpio.h
 ..\output\misc.o: ..\Libraries\inc\stm32f4xx_rcc.h
+..\output\misc.o: ..\Libraries\inc\stm32f4xx_tim.h
 ..\output\misc.o: ..\Libraries\inc\stm32f4xx_usart.h
 ..\output\misc.o: ..\Libraries\inc\stm32f4xx_wwdg.h
 ..\output\misc.o: ..\Libraries\inc\misc.h

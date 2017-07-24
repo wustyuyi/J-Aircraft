@@ -330,9 +330,9 @@
             <vShortWch>1</vShortWch>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
+              <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER,ARM_MATH_CM4, __FPU_PRESENT=1, __FPU_USED =1, __CC_ARM</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Core;..\Driver;..\Libraries\inc;..\System;..\User;..\uCOS-III\Bsp;..\uCOS-III\Config;..\uCOS-III\Core;..\uCOS-III\CPU;..\uCOS-III\Lib;..\uCOS-III\Port</IncludePath>
+              <IncludePath>..\Core;..\Driver;..\Libraries\inc;..\System;..\User;..\uCOS-III\Bsp;..\uCOS-III\Config;..\uCOS-III\Core;..\uCOS-III\CPU;..\uCOS-III\Lib;..\uCOS-III\Port;..\Hardware\SPI;..\Hardware\MPU6500;..\Hardware\IMU_AHRS;..\Hardware\LSM303;..\Hardware\TIMER_AHRS;..\Mymath\MahonyAHRS;..\Libraries\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -420,6 +420,21 @@
               <FileType>1</FileType>
               <FilePath>..\Libraries\src\stm32f4xx_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\src\stm32f4xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\src\stm32f4xx_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>misc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libraries\inc\misc.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -434,11 +449,6 @@
               <FileName>explore_systick.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\System\explore_systick.c</FilePath>
-            </File>
-            <File>
-              <FileName>explore_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\System\explore_usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -680,7 +690,61 @@
               <FileType>1</FileType>
               <FilePath>..\User\stm32f4xx_it.c</FilePath>
             </File>
+            <File>
+              <FileName>Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Task.c</FilePath>
+            </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>SPI3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\SPI\SPI3.c</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6500.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\MPU6500\MPU6500.c</FilePath>
+            </File>
+            <File>
+              <FileName>IMU_AHRS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\IMU_AHRS\IMU_AHRS.c</FilePath>
+            </File>
+            <File>
+              <FileName>LSM303D.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\LSM303\LSM303D.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer3_Ahrs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\TIMER_AHRS\Timer3_Ahrs.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Control</GroupName>
+        </Group>
+        <Group>
+          <GroupName>Parameter</GroupName>
+        </Group>
+        <Group>
+          <GroupName>Mymath</GroupName>
+          <Files>
+            <File>
+              <FileName>MahonyAHRS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mymath\MahonyAHRS\MahonyAHRS.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Combine</GroupName>
         </Group>
       </Groups>
     </Target>

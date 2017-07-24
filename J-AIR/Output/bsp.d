@@ -25,6 +25,7 @@
 ..\output\bsp.o: ..\Libraries\inc\stm32f4xx_dma.h
 ..\output\bsp.o: ..\Libraries\inc\stm32f4xx_gpio.h
 ..\output\bsp.o: ..\Libraries\inc\stm32f4xx_rcc.h
+..\output\bsp.o: ..\Libraries\inc\stm32f4xx_tim.h
 ..\output\bsp.o: ..\Libraries\inc\stm32f4xx_usart.h
 ..\output\bsp.o: ..\Libraries\inc\stm32f4xx_wwdg.h
 ..\output\bsp.o: ..\Libraries\inc\misc.h
